@@ -40,4 +40,9 @@ jq -r '
 
 # Pipelining in this case is pretty useless and could be replaced with >, however I enjoy using it.
 
+title=$(yt-dlp -e "$yt_url")
+
+echo -e "\n\n ====Video_Title====" >>Official_transcript.txt
+echo "$title" >>"Official_transcript.txt"
+
 rm yt_url_transcript.en.json3
