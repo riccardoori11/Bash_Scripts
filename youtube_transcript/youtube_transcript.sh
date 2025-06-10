@@ -5,6 +5,8 @@
 # yt-dlp
 # yt-dlp --help shows all the options by default
 
+#The output will be a file with the transcript unprocessed, with the video title at the very end.
+
 if ! command -v yt-dlp >/dev/null; then
   echo "Dependancies not available"
   exit 1
